@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="movie_register_visit">
+        <observer name="register_movie_visit"
+                  instance="Magenest\Movie\Observer\RegisterVisitObserver" />
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="check_cart_qty"
+                  instance="Magenest\Movie\Observer\CheckCartQtyObserver" />
+    </event>
+    <event name="adminhtml_customer_prepare_save">
+        <observer name="change_first_name"
+                  instance="Magenest\Movie\Observer\CheckFirstName" />
+    </event>
+</config>

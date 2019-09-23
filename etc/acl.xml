@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource
+                    id="Magenest_Movie::movie"
+                    title="Movie sub"
+                    sortOrder="60"/>
+            <resource id="Magenest_Movie::subscription"
+                      title="Movie subscription" />
+        </resources>
+    </acl>
+</config>
